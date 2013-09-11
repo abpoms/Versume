@@ -1,0 +1,166 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+\raggedcolumns
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} \\ \underline{\textbf{\emph{#3}}} \hfill #2\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+\textbf{#1} \\
+#2 \hfill #3 \\
+#4\\ 
+\underline{Selected Coursework:}\\
+
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Alex Poms}
+{San Mateo, California 94402}
+{(650) 787-7255 $\bullet$ alexpoms@gmail.com}
+
+\begin{center}
+
+\end{center}
+
+\header{Education}
+
+\schoolwithcourses{University of California, Davis}{Bachelor of
+  Science in Computer Science}{Expected Graduation June 2014}
+{Cumulative GPA: 3.50/4.00}
+\vspace*{-8pt}
+\begin{multicols}{2}
+\begin{itemize} \itemsep0em
+\item Data Structures
+\item Machine Assembly Programming
+\item Operating Systems
+\item Programming language theory
+\item Interactive Visualization
+\item Compiler design
+\end{itemize}
+\end{multicols}
+
+\header{Work History}
+\employer{Microsoft}{June - September 2013}{Software Development
+  Intern in Test}
+\begin{achievements}
+\item Researched, designed, and built a self-contained internal test
+  reproduction and diagnosis tool for Direct2D.
+\item Set in place clear UI principles and iterated on code
+  architecture to ensure that maintainers require minimal system
+  knowledge to implement new features.
+\item Took on responsibilities which ranged across the Software
+  Developer, Program Manager, and Software Developer in Test roles.
+\end{achievements}
+
+\employer{Intel}{June - September 2012}{Graphics Software Validation
+  Engineer Intern}
+\begin{achievements}
+\item Utilized fuzzing frameworks to discover and accurately diagnose
+  security exploits in graphics driver software
+\item Programmed and deployed custom test suites to automated systems that run on a regular cadence.
+\item Sought collaboration with different members within the the
+  organization in order to accelerate test production.
+\item Built in-house tools to accelerate manual tuning and testing.
+\end{achievements}
+
+\employer{Dr. Zhendong Su}{September 2012 - June 2013} {Undergraduate
+  Research Assistant}
+\begin{achievements}
+\item Constructed software to identify geometric patterns in
+  images and form meaningful representations of those patterns.
+\item Researched innovative approaches to online education that
+  focus on adaptive, personalized learning through student modelling.
+\item Collaborated with a post-doc and foreign exchange student to distribute work.
+\item Researched and implemented relevant computer vision algorithms.
+  modeling. 
+\end{achievements}
+
+\header{Skills}
+\begin{multicols}{2}
+  
+\underline{Languages}
+\begin{itemize}\itemsep0em
+\begin{multicols}{2}
+\item C++
+\item C\#
+\item Java
+\item Clojure
+\item Python
+\item Javascript
+\item CSS/HTML5
+\end{multicols}
+\end{itemize}
+\columnbreak
+
+\underline{Technologies}
+\begin{itemize}\itemsep0em
+\begin{multicols}{2}
+\item DirectX
+\item OpenGL
+\item Peach
+\item Compojure
+\item Ring
+\item SaltStack
+\item WPF
+\item XNA
+\end{multicols}
+\end{itemize}
+\end{multicols}
+
+\vspace*{-8pt}
+\header{Honors and Awards}
+\employer{Microsoft Imaginecup}{2012}{US Game Design Finalist}
+\begin{achievements}
+\item Gave quick pitches and long presentations on all aspects of the
+  product, including game-play, business, technical aspects and future plans.
+\item Worked closely with a multi-disciplinary team to create an
+  experience that brings to light the complicated issues involved in
+  environmental sustainability.
+\item Built for Windows Phone 7 using the XNA framework.
+\end{achievements}
+
+\header{Leadership Positions}
+\employer{Davis Computer Science Club}{Fall 2013 - Present}{President}
+\begin{achievements}
+\item Motivated officers by establishing a clear vision for redefining
+  Computer Science for students at UC Davis
+\item Worked with industry representatives and Davis representatives
+  to coordinate events and connect companies to club members.
+\item Attracted innovative speakers to give talks at club meetings.
+\end{achievements}
+
+
+\end{document}
